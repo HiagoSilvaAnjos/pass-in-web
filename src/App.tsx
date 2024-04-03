@@ -1,7 +1,11 @@
-function App() {
-  const [count, setCount] = useState(0);
+import { AttendenList } from "./components/attendee-list";
+import { Header } from "./components/header";
 
-  return <h1>Hello World!</h1>;
+export function App() {
+  return (
+    <div className="flex gap-2">
+      <Header />
+      <AttendenList />
+    </div>
+  );
 }
-
-export default App;
